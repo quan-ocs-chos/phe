@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chính</title>
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">BLOGGER</div>
+            <input class="search" placeholder="Tìm kiếm">
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Menu Ẩn -->
+    <nav class="side-menu">
+        <button class="close-menu"><i class="fas fa-times"></i></button>
+        <a href="main.html"><i class="fas fa-home"></i> Trang Chủ</a>
+        <a href="profile.html"><i class="fas fa-user"></i> Trang Cá Nhân</a>
+        <a href="Statistical.html"><i class="fas fa-chart-bar"></i> Thống Kê</a>
+        <a href="layout.html"><i class="fas fa-th-large"></i> Bố Cục</a>
+        <a href="theme.html"><i class="fas fa-paint-brush"></i> Chủ Đề</a>
+        <a href="Setting.html"><i class="fas fa-cog"></i> Cài Đặt</a>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <main class="main-content">
+        <!-- THÔNG BÁO KHI KHÔNG CÓ BÀI ĐĂNG -->
+        <div class="empty-post-container" id="empty-message">
+            <i class="fas fa-pencil-alt empty-icon"></i>
+            <h2>Không có bài đăng nào</h2>
+            <p>Các bài đăng bạn tạo sẽ xuất hiện ở đây</p>
+        </div>
+
+        <!-- NƠI HIỂN THỊ BÀI VIẾT NHÁP -->
+        <div id="draft-post"></div>
+
+        <!-- NÚT THÊM BÀI VIẾT -->
+        <button class="add-post-btn" onclick="window.location.href='postpass.html'">
+            <i class="fas fa-plus"></i>
+        </button>
+    </main>
+
+    <script src="post.js"></script>
+
+</body>
+</html>
